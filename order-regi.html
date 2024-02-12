@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注文サイトのレジ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="cal_total()">
+
+    <div class = "banarogo">
+        <div class = "banner">
+            <img src="img/white2.png" alt="404">
+        </div>
+        <div class = "banner2">
+            <img src="img/white2.png" alt="404">
+        </div>
+        <div class = "rogo">
+            <img src="img/rogo2.png" alt="404">
+        </div>
+    </div>
+
+    <h1 class = "title-2">お会計</h1>
+
+    <div class ="total">
+        <div class = "total-num" id="show_item_total">error</div>
+        <br>
+        <label for="name">合計お支払い金額：￥</label>
+        <div class = "total-num" id="show_total">error</div>
+    </div>
+
+    <h2>お客様情報の入力</h2>
+
+    <!-- 名前入力 -->
+    <form action="" method="post">
+        <label for="name">お名前</label>
+        <input type="text" id="name">
+    </form>
+
+    <!-- メールアドレス入力 -->
+    <form action="" method="post">
+        <label for="mail">メールアドレス</label>
+        <input type="text" id="mail">
+    </form>
+
+     <!-- 住所入力 -->
+    <form action="" method="post">
+        <label for="add">ご住所</label>
+        <input type="text" id="add">
+    </form>
+
+    <!-- カード情報 -->
+    <form action="" method="post">
+        <label for="card">カード情報</label>
+        <input type="text" id="card">
+    </form>
+
+    <div class = "go-deci">
+        <button class = "go-go-deci" onclick="np2()">注文確定</button>
+    </div>
+
+    <script src="script2.js" defer></script>
+    
+</body>
+</html>
